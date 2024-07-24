@@ -3,63 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">My Portfolio</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="hover:underline">About</a></li>
-                    <li><a href="#projects" class="hover:underline">Projects</a></li>
-                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+<body class="bg-gray-900 text-gray-300">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 p-6">
+            <div class="text-center">
+                <img class="w-24 h-24 mx-auto rounded-full" src="path/to/your/profile.jpg" alt="Profile Picture">
+                <h2 class="mt-4 text-xl font-semibold">Alex Smith</h2>
+                <p class="text-sm">I'm Designer</p>
+                <div class="flex justify-center mt-4 space-x-3">
+                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <nav class="mt-10">
+                <ul>
+                    <li class="mb-4"><a href="#home" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-home mr-2"></i> Home</a></li>
+                    <li class="mb-4"><a href="#about" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-user mr-2"></i> About</a></li>
+                    <li class="mb-4"><a href="#resume" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-file-alt mr-2"></i> Resume</a></li>
+                    <li class="mb-4"><a href="#portfolio" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-briefcase mr-2"></i> Portfolio</a></li>
+                    <li class="mb-4"><a href="#services" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-cog mr-2"></i> Services</a></li>
+                    <li class="mb-4"><a href="#contact" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-envelope mr-2"></i> Contact</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
-    
-    <main class="container mx-auto py-10">
-        <section id="about" class="mb-10">
-            <h2 class="text-2xl font-bold mb-4">About Me</h2>
-            <p>Hello! I'm a passionate developer skilled in web development.</p>
-        </section>
+        </aside>
         
-        <section id="projects" class="mb-10">
-            <h2 class="text-2xl font-bold mb-4">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Add your project cards here -->
-            </div>
-        </section>
-        
-        <section id="contact">
-            <h2 class="text-2xl font-bold mb-4">Contact</h2>
-            <form class="bg-white p-6 rounded shadow-md">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium">Name</label>
-                    <input type="text" id="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Your Name">
+        <!-- Main Content -->
+        <div class="flex-1 p-10">
+            <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('path/to/your/background.jpg');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                <div class="relative z-10 flex flex-col justify-center items-center h-full">
+                    <h1 class="text-4xl text-white font-bold">Alex Smith</h1>
+                    <p class="text-xl text-white">I'm Designer</p>
                 </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium">Email</label>
-                    <input type="email" id="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Your Email">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium">Message</label>
-                    <textarea id="message" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md">Send</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            </section>
         </div>
-    </footer>
-    
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
