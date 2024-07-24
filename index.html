@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#projects" class="hover:underline">Projects</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container mx-auto py-10">
+        <section id="about" class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p>Hello! I'm a passionate developer skilled in web development.</p>
+        </section>
+        
+        <section id="projects" class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Add your project cards here -->
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <form class="bg-white p-6 rounded shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Your Name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Your Email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-md">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
