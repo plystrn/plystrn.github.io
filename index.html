@@ -4,50 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-gray-900 text-gray-300">
-    <div class="flex min-h-screen">
+<body class="bg-dark text-light">
+    <div class="d-flex">
         <!-- Sidebar -->
-        <aside class="w-64 bg-gray-800 p-6">
+        <aside class="bg-secondary p-4" style="width: 250px;">
             <div class="text-center">
-                <img class="w-24 h-24 mx-auto rounded-full" src="path/to/your/profile.jpg" alt="Profile Picture">
-                <h2 class="mt-4 text-xl font-semibold">Alex Smith</h2>
-                <p class="text-sm">I'm Designer</p>
-                <div class="flex justify-center mt-4 space-x-3">
-                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-skype"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                <img class="rounded-circle" src="path/to/your/profile.jpg" alt="Profile Picture" style="width: 100px; height: 100px;">
+                <h2 class="mt-3">Tony Joshua Pongoh</h2>
+                <p>Data Analyst / Data Scientist</p>
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="https://facebook.com/your-profile" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/your-profile" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/your-profile" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/tonyjoshuap" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <nav class="mt-10">
-                <ul>
-                    <li class="mb-4"><a href="#home" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-home mr-2"></i> Home</a></li>
-                    <li class="mb-4"><a href="#about" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-user mr-2"></i> About</a></li>
-                    <li class="mb-4"><a href="#resume" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-file-alt mr-2"></i> Resume</a></li>
-                    <li class="mb-4"><a href="#portfolio" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-briefcase mr-2"></i> Portfolio</a></li>
-                    <li class="mb-4"><a href="#services" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-cog mr-2"></i> Services</a></li>
-                    <li class="mb-4"><a href="#contact" class="flex items-center text-gray-300 hover:text-white"><i class="fas fa-envelope mr-2"></i> Contact</a></li>
+            <nav class="mt-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#home" class="nav-link text-light"><i class="fas fa-home mr-2"></i> Home</a></li>
+                    <li class="nav-item mb-2"><a href="#about" class="nav-link text-light"><i class="fas fa-user mr-2"></i> About</a></li>
+                    <li class="nav-item mb-2"><a href="#resume" class="nav-link text-light"><i class="fas fa-file-alt mr-2"></i> Resume</a></li>
+                    <li class="nav-item mb-2"><a href="#portfolio" class="nav-link text-light"><i class="fas fa-briefcase mr-2"></i> Portfolio</a></li>
+                    <li class="nav-item mb-2"><a href="#contact" class="nav-link text-light"><i class="fas fa-envelope mr-2"></i> Contact</a></li>
                 </ul>
             </nav>
         </aside>
         
         <!-- Main Content -->
-        <div class="flex-1 p-10">
-            <section id="home" class="h-screen bg-cover bg-center relative" style="background-image: url('path/to/your/background.jpg');">
-                <div class="absolute inset-0 bg-black opacity-50"></div>
-                <div class="relative z-10 flex flex-col justify-center items-center h-full">
-                    <h1 class="text-4xl text-white font-bold">Alex Smith</h1>
-                    <p class="text-xl text-white">I'm Designer</p>
+        <div class="flex-grow-1 p-4">
+            <section id="home" class="vh-100 bg-cover bg-center position-relative" style="background-image: url('path/to/your/background.jpg');">
+                <div class="position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+                <div class="position-relative h-100 d-flex flex-column justify-content-center align-items-center text-center">
+                    <h1 class="text-white display-4">Tony Joshua Pongoh</h1>
+                    <p class="text-white lead">Data Analyst / Data Scientist</p>
+                </div>
+            </section>
+            
+            <section id="about" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">About Me</h2>
+                    <p>Results-driven Data Analyst with 2 years of experience in the merchandise division at a leading esports company. Skilled in data collection, analysis, and visualization to support business decision-making and optimize merchandise strategies. Adept at utilizing statistical techniques and tools such as Python, SQL, and Excel to uncover insights and drive data-informed decisions. Currently advancing skills through a rigorous Data Science bootcamp, focusing on machine learning, data modeling, and advanced analytics. Aspiring to transition into a Data Scientist role to leverage analytical expertise and technical knowledge to solve complex problems and drive innovation.</p>
+                </div>
+            </section>
+            
+            <section id="resume" class="py-5 bg-light text-dark">
+                <div class="container">
+                    <h2 class="text-center mb-4">Resume</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="resume-title">Sumary</h3>
+                            <div class="resume-item pb-0">
+                                <h4>Tony Joshua Pongoh</h4>
+                                <p><em>Innovative and deadline-driven Data Analyst with 2 years of experience designing and developing user-centered data solutions from initial concept to final, polished deliverable.</em></p>
+                                <ul>
+                                    <li>Bekasi, West Java</li>
+                                    <li>+62 822-1129-9066</li>
+                                    <li>tony.joshuap@gmail.com</li>
+                                </ul>
+                            </div>
+                            <h3 class="resume-title">Education</h3>
+                            <div class="resume-item">
+                                <h4>Bachelor of Engineering, Electrical Engineering Major</h4>
+                                <h5>August 2014 - March 2019</h5>
+                                <p><em>Sepuluh Nopember Institute of Technology, Surabaya, East Java</em></p>
+                                <p>Thesis: Measurement and Statistical Analysis of 2x2 MIMO Channel Capacity on Surabaya-Merauke Link</p>
+                            </div>
+                            <div class="resume-item">
+                                <h4>Digital Talent Incubator Data Science</h4>
+                                <h5>March 2024 - Now</h5>
+                                <p><em>Purwadhika Digital Technology School</em></p>
+                                <p>Creating CRUD marketplace application that allows user to operate as either seller or buyer using python. (GitHub Repository: <a href="https://github.com/plystrn/purwadhika">https://github.com/plystrn/purwadhika</a>)</p>
+                                <p>Creating analysis on online retail shipping dataset with visualization and giving actionable insight to solve the business problem as the output. (GitHub Repository: <a href="https://github.com/plystrn/capstone2">https://github.com/plystrn/capstone2</a>)</p>
+                                <p>Creating dashboard from online retail shipping dataset using tableau to create an overview of the warehouse performance.</p>
+                                <p>Creating classification machine learning model from bank marketing campaign dataset to solve business problem. (GitHub Repository: <a href="https://github.com/plystrn/capstone-3">https://github.com/plystrn/capstone-3</a>)</p>
+                                <p>Learning GCP and its products such as BQML, dataproc, dataflow, GCS, BigQuery, LookerStudio, and VertexAI.</p>
+                                <p>Deploying model in GCP with VertexAI and accessible through endpoint.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="resume-title">Professional Experience</h3>
+                            <div class="resume-item">
+                                <h4>Data Analyst (Merchandise)</h4>
+                                <h5>January 2022 - March 2024</h5>
+                                <p><em>PT Nizertek Lintas Bumi (Alter Ego Esports)</em></p>
+                                <ul>
+                                    <li>Creating dynamic sales dashboard using Looker Studio shared to other team in the merchandise division.</li>
+                                    <li>Giving insight/recommendation based on analysis using sales data for marketing campaign.</li>
+                                    <li>Creating weekly, monthly, and yearly sales report for marketing evaluation.</li>
+                                    <li>Presenting data insight and analysis to C-Level using visualization for easier communication.</li>
+                                    <li>Organizing merchandise database using Google Sheet.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="portfolio" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Portfolio</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="path/to/project1.jpg" class="card-img-top" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 1</h5>
+                                    <p class="card-text">Brief description of project 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more projects as needed -->
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Contact</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </section>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
