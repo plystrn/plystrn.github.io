@@ -36,6 +36,11 @@
     padding: 1.5rem;
 }
 
+.card-body.d-flex {
+    display: flex;
+    align-items: center;
+}
+
 .card-title {
     font-size: 1.25rem;
     font-weight: 600;
@@ -65,3 +70,4 @@
     left: 0;
     color: #007bff;
 }
+
