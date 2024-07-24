@@ -80,12 +80,17 @@ ul li {
     color: #007bff;
 }
 
-.square-img {
-    border-radius: 0;
+.sidebar-img {
+    width: 100px;
+    height: 100px;
+}
+
+.summary-img {
+    width: 150px;
+    height: 150px;
 }
 
 .social-links a {
     font-size: 1.5rem;
     margin: 0 10px;
 }
-
