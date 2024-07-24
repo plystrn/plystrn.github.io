@@ -11,3 +11,57 @@
     margin-left: 250px;
     padding: 20px;
 }
+
+.resume-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.resume-title i {
+    margin-right: 0.5rem;
+    color: #007bff;
+}
+
+.card {
+    border: none;
+    border-left: 3px solid #007bff;
+    border-radius: 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+.list-unstyled li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.list-unstyled li i {
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
